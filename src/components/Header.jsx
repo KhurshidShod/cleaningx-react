@@ -63,7 +63,7 @@ function Header() {
                 sliderRef.current.style.left = `70px`;
               }}
             >
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li
               onMouseEnter={(e) => {

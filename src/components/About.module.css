@@ -53,6 +53,7 @@
     border-radius: 20px;
 
     >h3 {
+        margin-top: 1rem;
         font-size: 28px;
         font-weight: 700;
         color: var(--color-blue);

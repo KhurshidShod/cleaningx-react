@@ -8,7 +8,7 @@ import Button from "./Button";
 export class About extends Component {
   render() {
     return (
-      <section className={styles.about}>
+      <section id="about" className={styles.about}>
         <div className="container">
           <div className={styles.about__wrapper}>
             <h1>About Us</h1>
