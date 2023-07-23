@@ -1,0 +1,135 @@
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hero__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero__wrapper_text {
+    width: calc(100% / 2 - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 22px;
+    min-width: 275px;
+}
+
+.hero__wrapper_text h1 {
+    font-size: 68px;
+    color: var(--color-blue);
+    font-weight: 700;
+}
+
+.hero__wrapper_text p {
+    font-size: 21px;
+    color: var(--color-grey);
+    font-weight: 400;
+}
+
+.hero__wrapper_text .contact {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 5rem;
+}
+
+.hero__wrapper_text .contact .contact__tel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    >button {
+        border: 1px solid var(--border-color);
+        outline: none;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--color-lightblue);
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+
+        >p {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--color-grey);
+        }
+
+        >a {
+            color: var(--color-blue);
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
+
+.hero__wrapper_img {
+    width: calc(100% / 2 - 2rem);
+    display: flex;
+    justify-content: end;
+    min-width: 275px;
+
+    >img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero__wrapper {
+        flex-direction: column;
+        gap: 3rem;
+
+        >.hero__wrapper_text {
+            width: 100%;
+            text-align: center;
+
+            >.contact {
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                >.contact__tel {
+                    min-width: 200px;
+
+                    >div {
+                        >a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.hero__wrapper_img {
+            width: 70%;
+        }
+    }
+}

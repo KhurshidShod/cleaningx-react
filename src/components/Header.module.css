@@ -1,0 +1,152 @@
+header {
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    transition: height .3s ease-in-out;
+    background-color: white;
+    z-index: 9;
+}
+
+.navbar__shrink{
+    height: 80px;
+    border-bottom: 1px solid var(--border-color);
+}
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.navbar__shrink .nav__slider{
+    bottom: 20px;
+}
+.nav__slider {
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, var(--color-lightblue), transparent);
+    bottom: 40px;
+    left: 70px;
+    border-radius: 0;
+    transition: all .3s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 178px;
+    height: 42px;
+}
+
+.nav__menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu li {
+    float: left;
+    margin-left: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu li:first-child {
+    display: none;
+}
+
+.nav__menu ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-blue);
+    transition: color .3s ease-in-out;
+}
+
+.nav__btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav__btns p {
+    cursor: pointer;
+}
+.open__nav{
+    display: none;
+    color: var(--color-blue);
+}
+
+@media (max-width: 850px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bgColor);
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        transition: .3s ease;
+    }
+
+    .nav__menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav__menu ul li {
+        margin: 0;
+    }
+
+    .nav__menu ul li:first-child {
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav__menu .nav__btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__menu.nav__menu_open {
+        left: 0;
+    }
+
+    .nav__menu li a {
+        font-size: 26px;
+    }
+
+    .nav__slider {
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .open__nav{
+        display: flex;
+        cursor: pointer;
+    }
+}
