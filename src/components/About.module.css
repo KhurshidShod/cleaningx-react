@@ -45,7 +45,7 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    padding: .2rem;
+    padding: .3rem;
     position: relative;
     place-content: center;
     place-items: center;
@@ -84,7 +84,7 @@
     width: 100px;
     background-image: linear-gradient(180deg, var(--color-blue), var(--color-lightblue));
     height: 150%;
-    animation: rotBGimg 3s linear infinite backwards;
+    animation: rotBGimg 4s linear infinite backwards;
     transition: all 0.2s linear;
     transform: rotate(40deg);
 }
