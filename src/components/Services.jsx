@@ -67,23 +67,6 @@ export class Services extends Component {
                   Lobortis mattis odio leo eget mauris met aliquet semper
                   molestie sollicitudin congue massa mauris lectus.
                 </p>
-                <div>
-                  <Button
-                    content="Get a free quote"
-                    bg="var(--color-lightblue)"
-                    fontSize="18px"
-                    fontWeight="700"
-                  />
-                <div>
-                  <button>
-                    <IoCall size={35} />
-                  </button>
-                  <div>
-                    <p>Call us now</p>
-                    <a href="tel:(414) 567 - 2109">(414) 567 - 2109</a>
-                  </div>
-                </div>
-                </div>
               </div>
             </div>
           </div>
