@@ -90,6 +90,7 @@
 }
 .about__card:hover:before{
     width: 150%;
+    height: 200%;
 }
 .about__buttons{
     display: flex;

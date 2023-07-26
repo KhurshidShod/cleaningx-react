@@ -123,8 +123,6 @@
 
 .services__wrapper_banner div:first-child {
     width: 40%;
-    min-width: 350px;
-
     >img {
         width: 100%;
     }

@@ -38,20 +38,20 @@ function Header() {
             </li>
             <li
               onMouseEnter={(e) => {
-                e.currentTarget.children[0].style.color =
+                  e.currentTarget.children[0].style.color =
                   "var(--color-lightblue)";
                 sliderRef.current.style.right = `${window.innerWidth - (e.currentTarget.getBoundingClientRect().right)}px`
-                const left = e.currentTarget.offsetLeft
+              const left = e.currentTarget.offsetLeft
                 setTimeout(() => {
                   sliderRef.current.style.left = `${left}px`;
-                }, 300);
+                }, 200);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
                 console.log(logoRef.current.getBoundingClientRect().right)
-                sliderRef.current.style.left = `${logoRef.current.getBoundingClientRect().left}px`;
+                sliderRef.current.style.left = `150px`;
                 setTimeout(() => {
-                  sliderRef.current.style.right = `${window.innerWidth - logoRef.current.getBoundingClientRect().right}px`;
+                  sliderRef.current.style.right = `1150px`;
                 }, 0);
               }}
             >
@@ -65,7 +65,7 @@ function Header() {
                 const left = e.currentTarget.offsetLeft
                 setTimeout(() => {
                   sliderRef.current.style.left = `${left}px`;
-                }, 300);
+                }, 200);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
@@ -86,7 +86,7 @@ function Header() {
                 const left = e.currentTarget.offsetLeft
                 setTimeout(() => {
                   sliderRef.current.style.left = `${left}px`;
-                }, 300);
+                }, 200);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
@@ -107,7 +107,7 @@ function Header() {
                 const left = e.currentTarget.offsetLeft
                 setTimeout(() => {
                   sliderRef.current.style.left = `${left}px`;
-                }, 300);
+                }, 200);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
@@ -128,7 +128,7 @@ function Header() {
                 const left = e.currentTarget.offsetLeft
                 setTimeout(() => {
                   sliderRef.current.style.left = `${left}px`;
-                }, 300);
+                }, 200);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
