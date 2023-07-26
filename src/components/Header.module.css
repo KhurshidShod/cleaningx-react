@@ -6,6 +6,7 @@ header {
     transition: height .3s ease-in-out;
     background-color: white;
     z-index: 9;
+    position: relative;
 }
 
 .navbar__shrink{
@@ -17,18 +18,18 @@ nav {
     justify-content: start;
     align-items: center;
     height: 100%;
-    position: relative;
 }
 .navbar__shrink .nav__slider{
     bottom: 20px;
 }
 .nav__slider {
     position: absolute;
-    width: 120px;
+    /* width: 120px; */
     height: 1px;
     background-image: linear-gradient(to right, transparent, var(--color-lightblue), transparent);
     bottom: 40px;
-    left: 70px;
+    left: 150px;
+    right: 1150px;
     border-radius: 0;
     transition: all .3s ease-in-out;
 }

@@ -19,11 +19,12 @@ function Header() {
     };
   }, []);
   const sliderRef = useRef();
+  const logoRef = useRef()
   return (
     <header className={scroll >= 89.1 ? styles.navbar__shrink : null}>
       <nav className="container">
         <div className={styles.nav__slider} ref={sliderRef}></div>
-        <div className={styles.logo}>
+        <div className={styles.logo} ref={logoRef}>
           <img src={Logo} alt="" />
         </div>
         <div
@@ -39,13 +40,19 @@ function Header() {
               onMouseEnter={(e) => {
                 e.currentTarget.children[0].style.color =
                   "var(--color-lightblue)";
-                sliderRef.current.style.width = `${e.currentTarget.offsetWidth}px`;
-                sliderRef.current.style.left = `${e.currentTarget.offsetLeft}px`;
+                sliderRef.current.style.right = `${window.innerWidth - (e.currentTarget.getBoundingClientRect().right)}px`
+                const left = e.currentTarget.offsetLeft
+                setTimeout(() => {
+                  sliderRef.current.style.left = `${left}px`;
+                }, 300);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
-                sliderRef.current.style.width = `120px`;
-                sliderRef.current.style.left = `70px`;
+                console.log(logoRef.current.getBoundingClientRect().right)
+                sliderRef.current.style.left = `${logoRef.current.getBoundingClientRect().left}px`;
+                setTimeout(() => {
+                  sliderRef.current.style.right = `${window.innerWidth - logoRef.current.getBoundingClientRect().right}px`;
+                }, 0);
               }}
             >
               <a href="#">Home</a>
@@ -54,13 +61,19 @@ function Header() {
               onMouseEnter={(e) => {
                 e.currentTarget.children[0].style.color =
                   "var(--color-lightblue)";
-                sliderRef.current.style.width = `${e.currentTarget.offsetWidth}px`;
-                sliderRef.current.style.left = `${e.currentTarget.offsetLeft}px`;
+                sliderRef.current.style.right = `${window.innerWidth - (e.currentTarget.getBoundingClientRect().right)}px`
+                const left = e.currentTarget.offsetLeft
+                setTimeout(() => {
+                  sliderRef.current.style.left = `${left}px`;
+                }, 300);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
-                sliderRef.current.style.width = `120px`;
-                sliderRef.current.style.left = `70px`;
+                console.log(logoRef.current.getBoundingClientRect().right)
+                sliderRef.current.style.left = `${logoRef.current.getBoundingClientRect().left}px`;
+                setTimeout(() => {
+                  sliderRef.current.style.right = `${window.innerWidth - logoRef.current.getBoundingClientRect().right}px`;
+                }, 0);
               }}
             >
               <a href="#about">About</a>
@@ -69,13 +82,19 @@ function Header() {
               onMouseEnter={(e) => {
                 e.currentTarget.children[0].style.color =
                   "var(--color-lightblue)";
-                sliderRef.current.style.width = `${e.currentTarget.offsetWidth}px`;
-                sliderRef.current.style.left = `${e.currentTarget.offsetLeft}px`;
+                sliderRef.current.style.right = `${window.innerWidth - (e.currentTarget.getBoundingClientRect().right)}px`
+                const left = e.currentTarget.offsetLeft
+                setTimeout(() => {
+                  sliderRef.current.style.left = `${left}px`;
+                }, 300);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
-                sliderRef.current.style.width = `120px`;
-                sliderRef.current.style.left = `70px`;
+                console.log(logoRef.current.getBoundingClientRect().right)
+                sliderRef.current.style.left = `${logoRef.current.getBoundingClientRect().left}px`;
+                setTimeout(() => {
+                  sliderRef.current.style.right = `${window.innerWidth - logoRef.current.getBoundingClientRect().right}px`;
+                }, 0);
               }}
             >
               <a href="#">Services</a>
@@ -84,13 +103,19 @@ function Header() {
               onMouseEnter={(e) => {
                 e.currentTarget.children[0].style.color =
                   "var(--color-lightblue)";
-                sliderRef.current.style.width = `${e.currentTarget.offsetWidth}px`;
-                sliderRef.current.style.left = `${e.currentTarget.offsetLeft}px`;
+                sliderRef.current.style.right = `${window.innerWidth - (e.currentTarget.getBoundingClientRect().right)}px`
+                const left = e.currentTarget.offsetLeft
+                setTimeout(() => {
+                  sliderRef.current.style.left = `${left}px`;
+                }, 300);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
-                sliderRef.current.style.width = `120px`;
-                sliderRef.current.style.left = `70px`;
+                console.log(logoRef.current.getBoundingClientRect().right)
+                sliderRef.current.style.left = `${logoRef.current.getBoundingClientRect().left}px`;
+                setTimeout(() => {
+                  sliderRef.current.style.right = `${window.innerWidth - logoRef.current.getBoundingClientRect().right}px`;
+                }, 0);
               }}
             >
               <a href="#">Articles</a>
@@ -99,13 +124,19 @@ function Header() {
               onMouseEnter={(e) => {
                 e.currentTarget.children[0].style.color =
                   "var(--color-lightblue)";
-                sliderRef.current.style.width = `${e.currentTarget.offsetWidth}px`;
-                sliderRef.current.style.left = `${e.currentTarget.offsetLeft}px`;
+                sliderRef.current.style.right = `${window.innerWidth - (e.currentTarget.getBoundingClientRect().right)}px`
+                const left = e.currentTarget.offsetLeft
+                setTimeout(() => {
+                  sliderRef.current.style.left = `${left}px`;
+                }, 300);
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.children[0].style.color = "var(--color-blue)";
-                sliderRef.current.style.width = `120px`;
-                sliderRef.current.style.left = `70px`;
+                console.log(logoRef.current.getBoundingClientRect().right)
+                sliderRef.current.style.left = `${logoRef.current.getBoundingClientRect().left}px`;
+                setTimeout(() => {
+                  sliderRef.current.style.right = `${window.innerWidth - logoRef.current.getBoundingClientRect().right}px`;
+                }, 0);
               }}
             >
               <a href="#">Contact</a>
