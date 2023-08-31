@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Button from "./Button";
+import Button from "../Button/Button";
 import styles from "./HeroSection.module.css";
-import Bg from "../assets/images/Group.svg";
+import Bg from "../../assets/images/Group.svg";
 import { IoCall } from "react-icons/io5";
+import CallUsNow from "../CallUsNow/CallUsNow";
 
-export class HeroSection extends Component {
-  render() {
+const HeroSection = () => {
     return (
-      <section className={styles.hero}>
+      <section className={styles.hero} id="hero">
         <div className="container">
           <div className={styles.hero__wrapper}>
             <div className={styles.hero__wrapper_text}>
@@ -19,20 +19,14 @@ export class HeroSection extends Component {
               </p>
               <div className={styles.contact}>
                 <Button
+                  width='217px'
+                  height='72px'
                   content="Get a free quote"
                   fontSize="18px"
                   bg="var(--color-lightblue)"
                   fontWeight="700"
                 />
-                <div className={styles.contact__tel}>
-                  <button>
-                    <IoCall size={35} />
-                  </button>
-                  <div>
-                    <p>Call us now</p>
-                    <a href="tel:(414) 567 - 2109">(414) 567 - 2109</a>
-                  </div>
-                </div>
+                <CallUsNow />
               </div>
             </div>
             <div className={styles.hero__wrapper_img}>
@@ -42,7 +36,6 @@ export class HeroSection extends Component {
         </div>
       </section>
     );
-  }
 }
 
 export default HeroSection;

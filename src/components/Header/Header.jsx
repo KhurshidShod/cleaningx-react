@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "../assets/images/logo.png";
+import Logo from "../../assets/images/logo.png";
 import styles from "./Header.module.css";
-import Button from "./Button";
+import Button from "../Button/Button";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaBarsStaggered } from "react-icons/fa6";
 
-function Header() {
+const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [scroll, setScroll] = useState();
   const handleScroll = () => {
@@ -55,7 +55,7 @@ function Header() {
                 }, 0);
               }}
             >
-              <a href="#">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li
               onMouseEnter={(e) => {
@@ -97,7 +97,7 @@ function Header() {
                 }, 0);
               }}
             >
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li
               onMouseEnter={(e) => {
@@ -145,6 +145,8 @@ function Header() {
           <div className={styles.nav__btns}>
             <p>Cart(0)</p>
             <Button
+              width='174px'
+              height='54px'
               fontSize={"16px"}
               content="Get a free quote"
               bg="var(--color-lightblue)"

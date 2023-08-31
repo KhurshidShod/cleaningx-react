@@ -1,42 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
   scroll-behavior: smooth;
 }
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-:root{
+
+:root {
   --color-grey: #6E7191;
   --color-blue: #211F54;
   --color-lightblue: #0075FF;
   --border-color: #EFF0F6;
-  --bg-grey: #EFF0F6;
   --bgColor: #FFF;
   --color-white: #FFF;
+  --border-color: #DCDDEB;
+  --bg-blue: #F7F9FC;
+  --social-bg: #EDF5FF;
 }
-.container{
+
+.container {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-button{
+
+button {
   outline: none;
   /* transition: .1s linear infinite; */
 }
-input{
+
+input {
   outline: none;
 }
-img{
+
+img {
   max-width: 100%;
+}
+
+@media (max-width: 650px) {
+      .customButton {
+        width: 132px !important;
+        font-size: 16px !important;
+        height: 50px !important;
+        font-weight: 400 !important;
+  }
 }
